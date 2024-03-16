@@ -12,18 +12,42 @@
     />
   </head>
   <body>
-    <div class="loggi-wrapper">
-      <section class="form-signup">
-        <header>Abanoonya</header>
+    <div class="login-wrapper">
+      <section class="form signup">
+        <header>Signup Ofune Omwagalwa</header>
         <form action="#">
-          <div class="error-text">this is an error message!</div>
+          <div class="error-text">This is an error message!</div>
           <div class="name-details">
-            <div class="field">
+            <div class="field input">
               <label for="First Name">First Name</label>
-              <input type="text" placeholder="First Name">
+              <input type="text" placeholder="First Name" />
+            </div>
+            <div class="field input">
+              <label for="Last Name">Last Name</label>
+              <input type="text" placeholder="Last Name" />
             </div>
           </div>
+          <div class="field input">
+            <label for="Email Address">Email Address</label>
+            <input type="email" placeholder="Enter your email" />
+          </div>
+          <div class="field input">
+            <label for="Password">Password</label>
+            <input type="password" placeholder="Create New Password" />
+          </div>
+          <div class="field input">
+            <label for="Password2">Re-enter NewPassword</label>
+            <input type="password" placeholder="Re-enter New Password" />
+          </div>
+          <div class="field image">
+            <label for="Select Image">Select Image</label>
+            <input type="file" />
+          </div>
+          <div class="field button">
+            <input type="submit" value="Join Abanoonya" />
+          </div>
         </form>
+        <div class="link">Already Signed Up? <a href="#">Login Now</a></div>
       </section>
     </div>
   </body>
