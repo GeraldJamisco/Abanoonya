@@ -11,6 +11,16 @@ document.addEventListener("click", function (e) {
     document.querySelector(".chat-sidebar-profile").classList.remove("active");
   }
 });
+
+// making the sidebar search appear and disapear looks nasty and cool on face 
+const searchBar = document.querySelector(".content-sidebar .content-sidebar-form input"),
+searchBtn = document.querySelector(".content-sidebar .content-sidebar-form button");
+
+searchBtn.onclick = () =>{
+  searchBar.classList.toggle("active");
+  searchBar.focus();
+  searchBtn.classList.toggle("active");
+}
 // end: Sidebar
 
 // start: Coversation

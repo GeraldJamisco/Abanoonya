@@ -185,6 +185,7 @@ body {
 .content-sidebar-form {
   position: relative;
   padding: 0 16px;
+  justify-content: space-between;
 }
 .content-sidebar-input {
   padding: 8px 16px;
@@ -195,49 +196,62 @@ body {
   border-radius: 4px;
   padding-right: 32px;
   font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
+.content-sidebar-input.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .content-sidebar-input:focus {
   border-color: var(--slate-400);
 }
-.content-sidebar-submit {
+button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 32px;
-  color: var(--slate-400);
-  background-color: transparent;
+  color: #333;
+  background-color: #fff;
   outline: transparent;
   border: none;
   cursor: pointer;
-  transition: color 0.15s ease-in-out;
+  transition: color 0.2s ease-in-out;
 }
-.content-sidebar-submit:hover {
+.content-sidebar-input button.active {
+  color: #fff;
+  background: #333;
+}
+
+button:hover {
   color: var(--slate-600);
 }
-.content-messages {
+.users {
   overflow-y: auto;
   height: 100%;
   margin-top: 16px;
 }
 
-.content-messages::-webkit-scrollbar {
+.users::-webkit-scrollbar {
   width: 0px;
 }
-.content-messages-list {
+.users-list {
   list-style-type: none;
   padding: 8px 0;
 }
-.content-messages-list > * > a {
+.users-list > * > a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: var(--slate-700);
   padding: 6px 16px;
 }
-.content-messages-list > * > a:hover {
+.users-list > * > a:hover {
   background-color: var(--slate-50);
 }
-.content-messages-list > .active > a {
+.users-list > .active > a {
   background-color: var(--slate-100);
 }
 .content-message-title {
@@ -267,7 +281,7 @@ body {
   z-index: 0;
 }
 
-/* .chat-content .content-messages .content-messages-list li .status-dot {
+/* .chat-content .users .users-list li .status-dot {
     font-size: 12px;
     color: #09a961;
     padding-left: -15px;
