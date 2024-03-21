@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abanoonya</title>
     <!-- css -->
-    <link rel="stylesheet" href="Login_and_Signup_stylesheet.css" />
+    <link rel="stylesheet" href="css/Style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/fontawesome/css/all.css" />
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
   </head>
-  <body>
+  <body class="login_body">
     <div class="login-wrapper">
       <section class="form signup">
         <header>Signup Ofune Omwagalwa</header>

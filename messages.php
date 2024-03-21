@@ -9,7 +9,7 @@
     />
     <link rel="stylesheet" href="css/tailwindcss-colors.css" />
     <!-- self CSS -->
-    <link rel="stylesheet" href="css/Messages_style.css" />
+    <link rel="stylesheet" href="css/Style.css" />
     <!-- fontawesome -->
     <link rel="stylesheet" href="css/fontawesome/css/all.css" />
     <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
@@ -253,31 +253,19 @@
               </div>
             </div>
             <!-- type text here starting chat -->
-            <form action="#" class="conversation-form typing-area">
-              <button type="button" class="conversation-form-button">
-                <i class="ri-emotion-line"></i>
-              </button>
-              <div class="conversation-form-group">
-                <input
-                  type="text"
-                  class="conversation-form-input"
-                  rows="1"
-                  placeholder="Type here..."
-                />
-                <button type="button" class="conversation-form-record">
-                  <i class="fa fa-microphone"></i>
-                </button>
-              </div>
-              <button
-                type="button"
-                class="conversation-form-button conversation-form-submit"
-              >
-                <i class="fa fa-send-plane"></i>
-              </button>
-            </form>
-          </div>
+            <form action="">
+            <div class="conversation-form">
+              
+                        <button type="button" class="conversation-form-button"><i class="ri-emotion-line"></i></button>
+                        <div class="conversation-form-group">
+                            <textarea class="conversation-form-input" rows="1" placeholder="Type here..."></textarea>
+                            <button type="button" class="conversation-form-record"><i class="fa fa-microphone"></i></button>
+                        </div>
+                        <button type="button" class="conversation-form-button conversation-form-submit"><i class="fa fa-paper-plane"></i></button>
+                    </div>
+                  
           <!-- end: Conversation -->
-        </div>
+        </div></form>
         <!-- end: Content -->
       </div>
     </section>
