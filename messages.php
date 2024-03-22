@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/tailwindcss-colors.css" />
-    <!-- self CSS -->
-    <link rel="stylesheet" href="css/Style.css" />
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="css/fontawesome/css/all.css" />
-    <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
-    <title>Abanoonya</title>
-  </head>
+  <?php
+  session_start();
+  if (!isset($_SESSION['AbanoonyaUniqueId'])) {
+    header("Location: index.php");
+  }
+include_once "header.php";
+
+?>
   <body>
     <!-- start: Chat -->
     <section class="chat-section">
@@ -77,7 +68,7 @@
               <ul class="users-list">
                 <li class="content-message-title"><span>Recently</span></li>
                 <li>
-                  <a href="#" data-conversation="#conversation-1">
+                  <a href="#" data-conversation="#conversation-1888">
                     <img
                       class="content-message-image"
                       src="images/jamisco_full_copy.jpg"
@@ -109,7 +100,7 @@
             <p>Select chat and view conversation!</p>
           </div>
           <!-- if a chat is selected please view this conversation below -->
-          <div class="conversation" id="conversation-1">
+          <div class="conversation" id="conversation-1888">
             <div class="conversation-top">
               <button type="button" class="conversation-back">
                 <i class="fa fa-arrow-left"></i>
