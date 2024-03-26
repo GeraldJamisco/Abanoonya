@@ -4,6 +4,12 @@
     header("Location: index.php");
   }
 include_once "header.php";
+include "php/config.php";
+
+$AbanoonyaUserDetails = mysqli_query($conn, "SELECT * FROM abanoonyausers WHERE AbanoonyaUniqueId = '{$_SESSION['AbanoonyaUniqueId']}'");
+if (mysqli_num_rows($AbanoonyaUserDetails) > 0) {
+  $AbanoonyaUserDetailsRow = mysqli_fetch_assoc($AbanoonyaUserDetails);
+}
 
 ?>
   <body>
@@ -32,7 +38,7 @@ include_once "header.php";
             </li>
             <li class="chat-sidebar-profile">
               <button type="button" class="chat-sidebar-profile-toggle">
-                <img src="images/jamisco_full_copy.jpg" alt="" />
+                <img src="images/<?php echo $AbanoonyaUserDetailsRow['AbanoonyaImg']; ?>" alt="" title="<?php echo $AbanoonyaUserDetailsRow['AbanoonyaFname']. ' '. $AbanoonyaUserDetailsRow['AbanoonyaLname']; ?>" />
               </button>
               <ul class="chat-sidebar-profile-dropdown">
                 <li>
